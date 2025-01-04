@@ -1,12 +1,13 @@
 #include <stdio.h>
-int main() {
-int n, i = 1;
-printf("Enter a number: ");
-scanf("%d", &n);
-while (i <= n) {
-printf("%d ", i);
-i++;
+struct Rectangle {
+int length;
+int breadth;
+};
+int calculateArea(struct Rectangle rect) {
+return rect.length * rect.breadth;
 }
-printf("\n");
+int main() {
+struct Rectangle rect = {10, 5};
+printf("Area of rectangle: %d\n", calculateArea(rect));
 return 0;
 }

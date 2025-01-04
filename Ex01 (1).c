@@ -1,13 +1,11 @@
 #include <stdio.h>
 int main() {
-int a, b, c;
-printf("Enter three numbers: ");
-scanf("%d %d %d", &a, &b, &c);
-if (a > b && a > c)
-printf("%d is the largest\n", a);
-else if (b > c)
-printf("%d is the largest\n", b);
-else
-printf("%d is the largest\n", c);
+int arr[] = {1, 2, 3, 4, 5};
+int* ptr = arr;
+printf("First element: %d\n", *ptr);
+ptr++;
+printf("Second element: %d\n", *ptr);
+ptr += 2;
+printf("Fourth element: %d\n", *ptr);
 return 0;
 }
