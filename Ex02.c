@@ -1,8 +1,13 @@
 #include <stdio.h>
 int main() {
-int a, b;
-printf("Enter two integers: ");
-scanf("%d %d", &a, &b);
-printf("Sum: %d\n", a + b);
+int num;
+printf("Enter a number: ");
+scanf("%d", &num);
+if (num > 0)
+printf("%d is positive\n", num);
+else if (num < 0)
+printf("%d is negative\n", num);
+else
+printf("The number is zero\n");
 return 0;
 }
